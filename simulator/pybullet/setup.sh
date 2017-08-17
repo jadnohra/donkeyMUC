@@ -1,7 +1,7 @@
 pip install pybullet
-python check_bullet.py
+python `dirname $0`/check_bullet.py
 
-if python ./check_bullet.py | grep -q '0.999826'; then
+if python `dirname $0`/check_bullet.py | grep -q '0.999826'; then
   echo "Looks good"
 else
   echo "Something is wrong"
